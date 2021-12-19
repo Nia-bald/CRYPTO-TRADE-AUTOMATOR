@@ -4,7 +4,7 @@ currently it only uses MACD strategy, I have no plans on applying it for other s
 for money  $$ DOLLA DOLLA $$, Yes, My life is sad I know, thank you.
 
 Before you try to actually use it, I want to make it absoluetly clear that it is not advisable to use this, this is a horribly written programme which can be improved
-In a million ways and there probably is a thousand times better version of this somewhere outthere. Originally I did not plan on uploading it on github.
+In a million ways and there probably is a thousand times better version of this somewhere outthere. This was only a personal side project and Originally I did not plan on uploading it on github.
 
 
 # BUT WHAT DOES IT DO EXACTLY!!!!
