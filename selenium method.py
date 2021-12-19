@@ -26,6 +26,7 @@ try:
     # args: currency pair, alert threshold, prev MACD - prev Signal Line
 
     # opens up the browser for each currency-pair
+    time = 0
     chrome_options = Options()
     chrome_options.add_argument("--headless")
     driver = webdriver.Chrome(ChromeDriverManager().install())
@@ -55,6 +56,7 @@ try:
         # switching to 30 min candlestick
         candle30 = driver.find_element(by='xpath',
                                        value=r'/html/body/div/div/div[2]/div[2]/div[2]/div/div[1]/div/div/div[2]/div[1]/div[3]/span[4]')
+        time = 1790
         candle30.click()
         sleep(2)
 
@@ -62,6 +64,7 @@ try:
 
         candle15 = driver.find_element(by='xpath',
                                        value=r'/html/body/div/div/div[2]/div/div[2]/div/div[1]/div/div/div[2]/div[1]/div[3]/span[3]')
+        time = 890
         candle15.click()
         sleep(2)
 
@@ -69,12 +72,14 @@ try:
 
         candle1 = driver.find_element(by='xpath',
                                       value=r'/html/body/div/div/div[2]/div/div[2]/div/div[1]/div/div/div[2]/div[1]/div[3]/span[1]')
+        time = 50
         candle1.click()
         sleep(2)
 
     def switchTo5(driver):
         candle5 = driver.find_element(by='xpath',
                                       value=r'/html/body/div/div/div[2]/div/div[2]/div/div[1]/div/div/div[2]/div[1]/div[3]/span[2]')
+        time = 290
         candle5.click()
         sleep(2)
 
@@ -269,9 +274,9 @@ try:
             currency_pair_values[i][2] = cdiff
 
         if changeAsset != len(driver.window_handles):
-            sleep(290 - 2*len(currency_pair_values) - 4*(abs(changeAsset - len(driver.window_handles))))
+            sleep(time - 2*len(currency_pair_values) - 4*(abs(changeAsset - len(driver.window_handles))))
         else:
-            sleep(290 - 2*len(driver.window_handles))
+            sleep(time - 2*len(driver.window_handles))
 
         if j == 5:
             status = True
