@@ -55,4 +55,5 @@ switchTo1
 ```
 
 
+I know a lot of it could be taken by user as an input, but like I said, it's a piece of shit programme, and I advise you to not use it.
 
