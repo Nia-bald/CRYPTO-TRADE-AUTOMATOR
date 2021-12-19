@@ -56,4 +56,5 @@ switchTo1
 
 
 I know a lot of it could be taken by user as an input, but like I said, it's a piece of shit programme, and I advise you to not use it.
+Btw I can totally work on it more, to make it more user-friendly or even Improve or add new features, but I don't see anyone using it. So if you want that, then please tell me.
 
